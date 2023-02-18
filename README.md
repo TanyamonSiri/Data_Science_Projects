@@ -6,7 +6,7 @@
 During 4 months intensive program of data science, we've learnt 10 sprints (on-going) which are in-demand skills to be an Entry-level Data Analyst. Therefore, all my consistent homework and projects are as follows:
 
 ## Sprint01 - Spreadsheets
-* Dynamics Query
+* Dynamic Query
 * Converting Date
 * ID Card Parser
 
