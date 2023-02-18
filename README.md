@@ -11,7 +11,7 @@ During 4 months intensive program of data science, we've learnt 10 sprints (on-g
 * ID Card Parser
 
 ## Sprint02 - Database SQL
-Small Resaurant database
+Small Resaurant database containing 5 dimension tables and 1 fact table.
 * [Restaurant.sql](https://replit.com/@TanyamonSirikan/BootcampHomeworkSQL#main.sql)
 * ER-diagram
 
