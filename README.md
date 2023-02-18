@@ -1,4 +1,4 @@
-# DS_-Bootcamp_Projects
+# DS_Bootcamp_Projects
 #### Data Science Bootcamp with `Ad Toy DataRockie`
 
 <img src="https://user-images.githubusercontent.com/125655019/219699167-b8e325a5-3283-4d29-b4c8-51dd6ed0c1d3.png" width="600" height="600">
