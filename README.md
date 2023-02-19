@@ -19,7 +19,7 @@ During 4 months intensive program of data science, we've learnt 10 sprints (on-g
 
 *January, 2023*
 
-A small database containing 5 dimension tables and 1 fact table with an ER diagram.As well as some queries for data analysis.
+Description: The small restaurant database consists of 5 dimensions table and 1 fact table, along with ER-diagram and some queries for data analysis. 
 * [My_Restaurant.sql](https://replit.com/@TanyamonSirikan/BootcampHomeworkSQL#main.sql)
 * [ER-diagram](https://dbdiagram.io/d/63d8d697296d97641d7d4acc)
 
@@ -29,7 +29,7 @@ A small database containing 5 dimension tables and 1 fact table with an ER diagr
 
 *Feburary, 2023*
 
-Rule-based Chatbot created to support users in food selection and interactive respond in rock-paper-scissors mini game.
+Description: The Rule-based Chatbot was created using R to help users choose Thai food and play interactive rock-paper-scissors game.
 
 * [Mel Chatbot.r 🐻](https://replit.com/@TanyamonSirikan/Bootcamp07RHW0102) 
 * Mel Chatbot Design Canvas
