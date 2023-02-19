@@ -1,9 +1,9 @@
 # DS_Bootcamp_Projects
-#### Data Science Bootcamp with `Ad Toy DataRockie`
+#### Data Science Bootcamp with `AdToy DataRockie`
 
 <img src="https://user-images.githubusercontent.com/125655019/219699167-b8e325a5-3283-4d29-b4c8-51dd6ed0c1d3.png" width="600" height="600">
 
-During 4 months intensive program of data science, we've learnt 10 sprints (on-going) which are in-demand skills to be an Entry-level Data Analyst. Therefore, all my consistent homework and projects are as follows:
+In data science bootcamp with 4 months intensive program (15 Dec 2022 - 30 June 2023), we've learnt 10 sprints (on-going) which are in-demand skills to be an Entry-level Data Analyst. Therefore, all my consistent homework and projects are as follows:
 
 ## Sprint01 - Spreadsheet
 
@@ -19,7 +19,7 @@ During 4 months intensive program of data science, we've learnt 10 sprints (on-g
 
 *January, 2023*
 
-Description: The small restaurant database consists of 5 dimensions table and 1 fact table, along with ER-diagram and some queries for data analysis. 
+Description: A small restaurant database consists of 5 dimensions table and 1 fact table, along with ER-diagram and some queries for data analysis. 
 * [My_Restaurant.sql](https://replit.com/@TanyamonSirikan/BootcampHomeworkSQL#main.sql)
 * [ER-diagram](https://dbdiagram.io/d/63d8d697296d97641d7d4acc)
 
