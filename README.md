@@ -25,7 +25,7 @@ Description: A simple restaurant database created with `SQL` consists of 5 dimen
 
 
 
-## 3. Programming
+## 3. R Programming
 
 *Feburary, 2023*
 
@@ -35,7 +35,7 @@ Description: The Rule-based Chatbot was created with `R` to assist users in choo
 * Mel Chatbot Design Canvas
 
 
-## 4. Data Transformation
+## 4. Data Transformation with R
 *Feburary, 2023*
 
 Description:  Using the `rvest` package to scrape data from imdb and vlr.gg web page, and using regular expression with `dplyr` package to transform it into usable format.
@@ -43,7 +43,7 @@ Description:  Using the `rvest` package to scrape data from imdb and vlr.gg web 
 * [Data Transformation and Web Scraping Report](https://datalore.jetbrains.com/view/notebook/eclEZBSQvyvUOvifkyoaE9)
 * [Source Code](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Data%20Transformation/Data_Transformation_Web_Scraping.r)
 
-## 5. Data Visualization
+## 5. Data Visualization with R
 
 *March, 2023*
 
