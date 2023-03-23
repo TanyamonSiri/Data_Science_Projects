@@ -1,0 +1,308 @@
+---
+title: "Diamonds Report with Data Visualization"
+author: "Tanyamon Sirikanjanakul"
+date: "`r Sys.Date()`"
+output: 
+html_document:
+  toc: true
+  toc_float: true
+---
+
+## Sprint 05 - Data Visualization Homework
+
+------------------------------------------------------------------------
+
+: Explore dataframe `diamonds` and create 5 visualizations
+
+![Diamond_ring](https://images.unsplash.com/photo-1605102062083-ae61a51393f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+
+The dataset `diamonds` is a built-in dataset in `ggplot2` library which containing the prices and other attributes of almost 54,000 round cut diamonds.
+
+The variable in `diamonds`*(53,940 rows x 10 columns)* are as follows:
+
+-   **carat** : weight of the diamond (0.2--5.01)
+-   **cut** : quality of the cut (Fair, Good, Very Good, Premium, Ideal)
+-   **color** : diamond color, from D (best) to J (worst)
+-   **clarity** : a measurement of how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))
+-   **price** : price in US dollars (\$326--\$18,823)
+-   **x** : length in mm (0--10.74)
+-   **y** : width in mm (0--58.9)
+-   **z** : depth in mm (0--31.8)
+-   **depth** : total depth percentage = z / mean(x, y) = 2 \* z / (x + y) (43--79)
+-   **table** : width of top of diamond relative to widest point (43--95)
+
+--------------------------------------------------------------------
+
+### 1. Introduction
+
+**Objective** Let's say I'm looking for an engagement ring (for myself). I have done some research in these diamond attributes and come across some questions:
+
+-   What is the distribution of `price` in round cut diamonds ?
+-   I heard that in diamonds, `table` should be fairly large. Therefore, I want to compare the `table`values between `cut` grade
+-   As diamond is grading by its `clarity`, let's explore this variable by comparing each `clarity` group
+-   `Color` and `carat` also play a major role in diamond `price`. What is the correlation between these two variables with respect to `clarity`?
+-   For buying engagement ring on a suitable budget, What is the average price of diamonds by `color` and `clarity`?
+
+------------------------------------------------------------------------
+
+### 2. Loading Libraries and Data
+
+```{r message=FALSE, warning=FALSE}
+# Import Library
+library(tidyverse)
+library(dplyr)
+library(patchwork)
+library(scales)
+```
+
+```{r message=FALSE, warning=FALSE}
+# loading dataset
+data(diamonds)
+```
+
+------------------------------------------------------------------------
+
+### 3. Understanding the dataset
+
+Review dataset
+
+```{r}
+head(diamonds)
+```
+
+Review data structure
+
+```{r}
+glimpse(diamonds)
+```
+
+#### The Diamonds Grading System
+
+<p>To gain a better understanding in this dataset, here's some study that I did on diamond grading system and its value (in this case -- *price*). The grading system is based on four attributes: carat, color, clarity, and cut, known as **The Four Cs of Diamonds.**</p>
+
+**Carat**
+
+<p>Diamond weight is measured in carats. One carat (or 1 ct, when abbreviated) equals 0.2 gram. The carat weight is sometimes directly related to price and the prices go up as diamond carat weight increase.</p>
+
+**Color**
+
+<p>Diamonds are graded on a color scale from D-Z. According to [GIA color grading scale](https://www.gemsociety.org/article/diamond-color/), a diamond graded D-F is considered to be "colorless" and diamond graded G-J are considered to be "near colorless".</p>
+
+![GIA color chart](https://www.gemsociety.org/uploads/750/75/2018/03/diamond_color_chart.jpg)
+
+**Clarity**
+
+<p>[Diamonds clarity](https://www.gemsociety.org/article/diamond-clarity/) are graded on a scale from "Internal Flawless (IF)" to "Included (I3)". Most diamonds have inclusions (defined as anything that will interfere with the free passage of light) but the less inclusions it has, the more valuable it is.</p>
+
+Clarity grading are as follows:
+
+-   IF: Internally Flawless
+-   VVS1, VVS2: Very, Very Slightly Included
+-   VS1, VS2: Very Slightly Included
+-   SI1,SI2: Slightly Included
+-   I1: Included
+
+![Diamond Clarity Chart](https://www.gemsociety.org/uploads/750/75/2018/03/diamond_clarity.jpg)
+
+**Cut**
+
+<p>
+
+[Diamond cut quality](https://www.gemsociety.org/article/diamond-cuts/) is what gives a diamond its sparkle. Therefore, Cut is considered to be the most important determining the diamond's overall beauty. The overall quality of the cut is determined by the anatomy of diamond such as *table, total depth percentage, etc.* as well as the quality of the polish.
+
+For round brilliant diamonds, cut grading are as follows:
+
+-   Ideal or Excellence
+-   Premium
+-   Very Good
+-   Good
+-   Fair
+-   Poor (does not include in this dataset)
+
+</p>
+
+------------------------------------------------------------------------
+
+### 4. Data Visualization
+
+#### Chart 01 - Diamonds prices distribution
+
+To simply explore the distribution of diamonds price, the histogram along with boxplot is plotted as shown below:
+
+```{r message=FALSE, warning=FALSE}
+# Using sampling method
+set.seed(42) 
+p1 <- ggplot(diamonds %>% sample_n(5400),
+       aes(price)) +
+  geom_histogram(bins=10, fill = "#b0c4b1", alpha = 0.5, color = "#4a5759" ) +
+  theme_minimal() +
+  ggtitle("Histogram")
+
+p2 <- ggplot(diamonds %>% sample_n(5400),
+       aes(price)) +
+  geom_boxplot(fill = "#b0c4b1", alpha = 0.5, color = "#4a5759",
+               outlier.colour = "#bc4b51", outlier.shape = 1) +
+  theme_minimal() +
+  ggtitle("Boxplot")
+
+patchwork <- p1 / p2
+patchwork + 
+  plot_annotation(
+  title = "The Distribution of Diamonds Prices",
+  subtitle = 'The "prices" distribution is positive skew with outliers (red marks)',
+  caption = 'Source: Diamonds from ggplot2'
+) 
+
+```
+
+-   The diamonds "prices" distribution is positive skew, and there are outliers (red marks) as shown in the boxplot.
+
+------------------------------------------------------------------------
+
+#### Chart 02 - Boxplot of Table by Cut Grade
+
+As `table` is one of the attribute that affect the `cut` quality. I want to compare the distribution of `table` between `cut` grade side-by-side. The boxplot of table is created as shown below:
+
+```{r message=FALSE, warning=FALSE}
+diamonds %>%
+  ggplot(aes( cut ,table,fill=cut, col=cut)) +
+  #geom_point(position = "jitter") +
+  geom_jitter(alpha=0.1, show.legend = FALSE) +
+  geom_boxplot(alpha=0.9, fill= NA, color = "#463f3a", show.legend = FALSE)+
+  theme_minimal() +
+  scale_color_manual(values = c(
+    "#ffcdb2", "#ffb4a2", "#e5989b", "#b5838d", "#9e2a2b")) +
+  labs(title = "Boxplot of Table by Cut Grade",
+       subtitle = "Table: width of top of diamond relative to widest point",
+       x = "Cut Grade", 
+       y = "Table",
+       caption = "Source: Diamonds from ggplot2")
+```
+
+-   From this chart, it can be seen that only diamonds with Good-cut has no outlier, and the range of table is much more narrower in Ideal-cut compared to the Fair-cut (worst).
+-   The median of Ideal-cut table is also lower than other cut grade. Therefore, there is a certain suitable range for diamond table.
+
+------------------------------------------------------------------------
+
+#### Chart 03 - Percentage of diamonds by Clarity Segments
+
+As in this dataset, `clarity` is scaling from IF to I1, and the flaw is usually noticeable in SI1 to I1. Therefore, instead of showing all scaling percentage in pie chart, the `clarity` is grouped into 4 segments as follows:
+
+-   Internal Flawless (IF)
+-   Very, Very Slightly Included (VVS1-2)
+-   Very Slightly Included (VS1-2)
+-   All other (SI1 to I1)
+
+In this case, I can focus more on comparing the clean and unnoticeable grade.
+
+```{r message=FALSE, warning=FALSE}
+## create new segment level
+# data transformation
+dia_cl <- diamonds %>%
+  mutate(segment="")
+
+dia_cl$segment[dia_cl$clarity == "IF"] <- "Internal Flawless (IF)"
+dia_cl$segment[dia_cl$clarity %in% c("VVS1","VVS2")] <- "Very, Very Slightly Included (VVS1-2)"
+dia_cl$segment[dia_cl$clarity %in% c("VS1","VS2")] <- "Very Slightly Included (VS1-2)"
+dia_cl$segment[dia_cl$clarity %in% c("SI1","SI2", "I1")] <- "All Other (SI1 to I1)"
+
+dia_cl$segment <- factor(dia_cl$segment, levels = c("Internal Flawless (IF)", "Very, Very Slightly Included (VVS1-2)","Very Slightly Included (VS1-2)","All Other (SI1 to I1)"))
+
+dia_cl <- dia_cl %>%
+  group_by(segment)  %>% 
+  count() %>%
+  ungroup() %>%
+  mutate(pc =`n`/sum(`n`)) %>%
+  arrange(pc ) %>%
+  mutate(labels = scales::percent(pc, accuracy = 0.1))
+dia_cl
+```
+
+Create Pie Chart
+
+```{r message=FALSE, warning=FALSE}
+# build pie chart
+ggplot(dia_cl, aes(x="", y = pc,  fill= segment)) +
+  geom_col(alpha=0.8) +
+  geom_text(aes(x = 1.65, label = labels),
+            position = position_stack(vjust = 0.5),
+            size = 3)+
+  coord_polar(theta = "y") +
+  theme_void() + #empty theme 
+  scale_fill_manual(values=c("#8338ec","#e29578","#ccc5b9","#252422")) +
+  guides(fill = guide_legend(title = "Clarity Segments")) +
+  labs(title = "Percentage of diamonds by Clarity Segments",
+       subtitle = "Total n = 53,940",
+       caption = "Source: Diamonds from ggplot2")
+
+```
+
+-   It can be seen that the smallest fraction in this case is IF or Internal Flawless diamond with 3.3%.
+
+------------------------------------------------------------------------
+
+#### Chart 04 - Distribution of Price by Color
+
+As diamond `prices` depend on various variables. I want to explore the correlation between `carat` and `price` in colorless diamonds (D, E, and F), focusing solely on clean & unnoticeable flaw clarity grades (IF to VS2).
+
+Scatter plots with trendlines are used to illustrate these correlations.
+
+```{r message=FALSE, warning=FALSE}
+## Data Transformation
+colorless_dia <- diamonds %>% 
+  filter(color %in% c("D","E","F") & cut == "Ideal"
+         & clarity %in% c("IF","VVS1","VVS2","VS1","VS2"))
+
+# summary(colorless_dia)
+
+
+## Scatterplot
+ggplot(colorless_dia, aes(x=carat, y=price, col = color) ) +
+  geom_point(size=1, position = "jitter", alpha=0.4) +
+  geom_smooth(method="lm", aes(color=color),
+            formula = (y ~ exp(x)),
+             se = FALSE) +
+  scale_x_continuous(limits =c(0.20,2.00) , n.breaks = 10) +
+  scale_y_continuous(limits = c(500,20000), n.breaks = 10) +
+  theme_minimal() +
+  scale_color_manual( values = c("#4575b4", "#91cf60", "#fc8d59"))  +
+  facet_wrap(~ clarity, ncol = 2) +
+  labs(title = "Correlation between Carat and Price in Colorless Diamonds",x = "Carat", y = "Price (USD)",
+       subtitle = "Cut: Ideal grade, Color: D-E-F, Clarity: IF to VS2 ",
+       caption = "Source: Diamonds from ggplot2")
+
+```
+
+-   According to the chart above, there's a positive correlation between carat and price in all colorless diamonds
+-   In terms of clarity grade, the price jump between D&E-color was found in IF-grade as the price of D-color diamonds increase exponentially
+
+------------------------------------------------------------------------
+
+#### Chart 05 - Average Price of Colorless Diamonds by Clarity
+
+Assume the engagement ring that I'm looking for is 1.00-1.25 carat diamond with Ideal-cut. Before making decision, I want to know the `average price` of ideal cut diamond based on `color` and `clarity`.
+
+```{r message=FALSE, warning=FALSE}
+  colorless_dia %>% 
+  filter(carat >= 1 & carat <= 1.25) %>%
+  group_by(color,clarity) %>%
+  summarise(avg_price = round(mean(price))) %>%
+  ggplot( aes(x=color, y=avg_price, fill=clarity)) +
+  geom_bar(alpha = 0.8,stat="identity", position=position_dodge())+
+  geom_text(aes(label=avg_price), vjust=1.6, color="black",
+            position = position_dodge(0.9), size=2)+
+  scale_fill_brewer(palette="BuPu", direction = 1) +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0,18000), n.breaks = 8) +
+  labs(title = "Average Price of Colorless Diamonds by Clarity",
+       subtitle = "Cut: Ideal grade and Carat: 1.00 to 1.25",
+       x = "Color", 
+       y = "Average Price (USD)",
+       caption = "Source: Diamonds from ggplot2")
+
+```
+
+-   Refer to the chart above, it can be seen that the average price of diamond increase rapidly with the clarity and color grade
+-   This could be helpful information if I wish to trade off some aspects to lower the price.
+
+------------------------------------------------------------------------
