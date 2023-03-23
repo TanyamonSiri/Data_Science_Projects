@@ -7,7 +7,7 @@ In data science bootcamp with 4 months intensive program (15 Dec 2022 - 30 June 
 
 ## 1. Spreadsheet
 
-*December, 2022*
+
 
 * [Dynamic Query](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Spreadsheet/DynamicQuery.jpg)
 * [Converting TH to ENG Date](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Spreadsheet/Convert_TH_to_EN_Date.jpg)
@@ -15,39 +15,28 @@ In data science bootcamp with 4 months intensive program (15 Dec 2022 - 30 June 
 
 
 
-## 2. Database SQL
-
-*January, 2023*
-
-Description: A simple restaurant database created with `SQL` consists of 5 dimension tables and 1 fact table, as well as an ER-diagram and some queries for data analysis. 
+## 2. Database SQL 
+A simple restaurant database created with `SQL` consists of 5 dimension tables and 1 fact table, as well as an ER-diagram and some queries for data analysis. This project is published in [Replit](https://replit.com/~), which is a powerful platform for creating and sharing software. I also create the ER-diagram of my restaurant database to show the relationships between tables available in this database.
 * [My_Restaurant.sql](https://replit.com/@TanyamonSirikan/BootcampHomeworkSQL#main.sql)
 * [ER-diagram](https://dbdiagram.io/d/63d8d697296d97641d7d4acc)
 
 
 
 ## 3. R Programming
+The Rule-based Chatbot is created to assist users in choosing Thai food and playing an interactive rock-paper-scissors game. This project is created with `R` and published in Replit, with an objective to manage input data using control flow and function to generated the desired outputs.
 
-*Feburary, 2023*
-
-Description: The Rule-based Chatbot was created with `R` to assist users in choosing Thai food and playing an interactive rock-paper-scissors game.
-
-* [Mel Chatbot.r 🐻](https://replit.com/@TanyamonSirikan/Bootcamp07RHW0102) 
+* [Mel Chatbot.r 🐻](https://replit.com/@TanyamonSirikan/Mel-Chatbot)
 * Mel Chatbot Design Canvas
 
 
 ## 4. Data Transformation with R
-*Feburary, 2023*
+Using the `rvest` package to scrape data from imdb and vlr.gg web page, and using regular expression with `dplyr` package to transform it into usable format.
 
-Description:  Using the `rvest` package to scrape data from imdb and vlr.gg web page, and using regular expression with `dplyr` package to transform it into usable format.
-
-* [Data Transformation and Web Scraping Report](https://datalore.jetbrains.com/view/notebook/eclEZBSQvyvUOvifkyoaE9)
+* [Report of Data Transformation and Web Scraping](https://datalore.jetbrains.com/view/notebook/eclEZBSQvyvUOvifkyoaE9)
 * [Source Code](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Data%20Transformation/Data_Transformation_Web_Scraping.r)
 
 ## 5. Data Visualization with R
-
-*March, 2023*
-
-Description: A report with 5 visualization from `diamonds` dataset, using `ggplot2` to explore this dataset and create `R Markdown` document. Note that
+A report with 5 visualization from `diamonds` dataset, using `ggplot2` to explore this dataset and create `R Markdown` document. Note that
 `diamonds` is a built-in dataset in ggplot2 library that containing the prices and other attributes of almost 54,000 round cut diamonds.
 
 * [Diamonds Report with Data Visualization](http://rpubs.com/Sleepping/Diamonds_report)
