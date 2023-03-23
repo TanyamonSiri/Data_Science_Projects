@@ -39,6 +39,11 @@ Description: The Rule-based Chatbot was created using R to help users choose Tha
 
 ## Sprint05 - Data Visualization
 
+*March, 2023*
+
+Description: A report with 5 visualization from `diamonds` dataset, using `ggplot2` package to explore this dataset and create `R Markdown` document. Note that
+`diamonds` is a built-in dataset in ggplot2 library that containing the prices and other attributes of almost 54,000 round cut diamonds.
+
 ## Sprint06 - Statistics
 
 ## Sprint07 - Machine Learning for Data Analyst
