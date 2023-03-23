@@ -36,6 +36,12 @@ Description: The Rule-based Chatbot was created with `R` to assist users in choo
 
 
 ## Sprint04 - Data Transformation
+*Feburary, 2023*
+
+Description:  Using the `rvest` package to scrape data from imdb and vlr.gg web page, and using regular expression with `dplyr` package to transform it into usable format.
+
+* [Data Transformation and Web Scraping](https://datalore.jetbrains.com/view/notebook/eclEZBSQvyvUOvifkyoaE9)
+* [Source Code - Data Transformation and Web Scraping]
 
 ## Sprint05 - Data Visualization
 
