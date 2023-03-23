@@ -30,7 +30,7 @@ The Rule-based Chatbot is created to assist users in choosing Thai food and play
 
 
 ## 4. Data Transformation with R
-Using the `rvest` package to scrape data from imdb and vlr.gg web page, and using regular expression with `dplyr` package to transform it into usable format.
+Using the `rvest` package to scrape data from two different web page (IMDb & VLR.gg), along with regular expression and `dplyr` package to transform it into usable format.
 
 * [Report of Data Transformation and Web Scraping](https://datalore.jetbrains.com/view/notebook/eclEZBSQvyvUOvifkyoaE9)
 * [Source Code](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Data%20Transformation/Data_Transformation_Web_Scraping.r)
