@@ -18,6 +18,7 @@ In data science bootcamp with 4 months intensive program (15 Dec 2022 - 30 June 
 ## 2. Database SQL 
 A simple restaurant database created with `SQL` consists of 5 dimension tables and 1 fact table, as well as an ER-diagram and some queries for data analysis. This project is published in [Replit](https://replit.com/~), which is a powerful platform for creating and sharing software. I also create the ER-diagram of my restaurant database to show the relationships between tables available in this database.
 * [My_Restaurant.sql](https://replit.com/@TanyamonSirikan/BootcampHomeworkSQL#main.sql)
+* [Source Code](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Database%20SQL/myrestaurant.sql)
 * [ER-diagram](https://dbdiagram.io/d/63d8d697296d97641d7d4acc)
 
 
