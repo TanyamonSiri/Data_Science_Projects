@@ -19,7 +19,7 @@ In data science bootcamp with 4 months intensive program (15 Dec 2022 - 30 June 
 
 *January, 2023*
 
-Description: A small restaurant database consists of 5 dimension tables and 1 fact table, along with ER-diagram and some queries for data analysis. 
+Description: A simple restaurant database created with `SQL` consists of 5 dimension tables and 1 fact table, as well as an ER-diagram and some queries for data analysis. 
 * [My_Restaurant.sql](https://replit.com/@TanyamonSirikan/BootcampHomeworkSQL#main.sql)
 * [ER-diagram](https://dbdiagram.io/d/63d8d697296d97641d7d4acc)
 
@@ -29,7 +29,7 @@ Description: A small restaurant database consists of 5 dimension tables and 1 fa
 
 *Feburary, 2023*
 
-Description: The Rule-based Chatbot was created using R to help users choose Thai food and play interactive rock-paper-scissors game.
+Description: The Rule-based Chatbot was created with `R` to assist users in choosing Thai food and playing an interactive rock-paper-scissors game.
 
 * [Mel Chatbot.r 🐻](https://replit.com/@TanyamonSirikan/Bootcamp07RHW0102) 
 * Mel Chatbot Design Canvas
