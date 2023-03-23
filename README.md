@@ -5,7 +5,7 @@
 
 In data science bootcamp with 4 months intensive program (15 Dec 2022 - 30 June 2023), we've learnt 10 sprints (on-going) which are in-demand skills to be an Entry-level Data Analyst. Therefore, all my consistent homework and projects are as follows:
 
-## Sprint01 - Spreadsheet
+## 1. Spreadsheet
 
 *December, 2022*
 
@@ -15,7 +15,7 @@ In data science bootcamp with 4 months intensive program (15 Dec 2022 - 30 June 
 
 
 
-## Sprint02 - Database SQL
+## 2. Database SQL
 
 *January, 2023*
 
@@ -25,7 +25,7 @@ Description: A simple restaurant database created with `SQL` consists of 5 dimen
 
 
 
-## Sprint03 - R Programming
+## 3. Programming
 
 *Feburary, 2023*
 
@@ -35,15 +35,15 @@ Description: The Rule-based Chatbot was created with `R` to assist users in choo
 * Mel Chatbot Design Canvas
 
 
-## Sprint04 - Data Transformation
+## 4. Data Transformation
 *Feburary, 2023*
 
 Description:  Using the `rvest` package to scrape data from imdb and vlr.gg web page, and using regular expression with `dplyr` package to transform it into usable format.
 
-* [Data Transformation and Web Scraping](https://datalore.jetbrains.com/view/notebook/eclEZBSQvyvUOvifkyoaE9)
-* [Source Code - Data Transformation and Web Scraping]
+* [Data Transformation and Web Scraping Report](https://datalore.jetbrains.com/view/notebook/eclEZBSQvyvUOvifkyoaE9)
+* [Source Code](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Data%20Transformation/Data_Transformation_Web_Scraping.r)
 
-## Sprint05 - Data Visualization
+## 5. Data Visualization
 
 *March, 2023*
 
@@ -51,14 +51,14 @@ Description: A report with 5 visualization from `diamonds` dataset, using `ggplo
 `diamonds` is a built-in dataset in ggplot2 library that containing the prices and other attributes of almost 54,000 round cut diamonds.
 
 * [Diamonds Report with Data Visualization](http://rpubs.com/Sleepping/Diamonds_report)
-* [Source Code - Diamonds Report with Data Visualization](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Data%20Visualization/Diamonds_report_rev00.Rmd)
+* [Source Code](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Data%20Visualization/Diamonds_report_rev00.Rmd)
 
-## Sprint06 - Statistics
+## 6. Statistics
 
-## Sprint07 - Machine Learning for Data Analyst
+## 7. Machine Learning for Data Analyst
 
-## Sprint08 - Intro to Python Programming
+## 8. Intro to Python Programming
 
-## Sprint09 - Machine Learning for Data Analyst
+## 9. Machine Learning for Data Analyst
 
-## Sprint10 - Dashboard 
+## 10. Dashboard 
