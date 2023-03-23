@@ -59,6 +59,6 @@ Description: A report with 5 visualization from `diamonds` dataset, using `ggplo
 
 ## 8. Intro to Python Programming
 
-## 9. Machine Learning for Data Analyst
+## 9. Essential Python for Data Science
 
 ## 10. Dashboard 
