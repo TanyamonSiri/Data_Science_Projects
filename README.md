@@ -44,8 +44,8 @@ Description: The Rule-based Chatbot was created using R to help users choose Tha
 Description: A report with 5 visualization from `diamonds` dataset, using `ggplot2` to explore this dataset and create `R Markdown` document. Note that
 `diamonds` is a built-in dataset in ggplot2 library that containing the prices and other attributes of almost 54,000 round cut diamonds.
 
-* [Diamonds Report with Visualization](http://rpubs.com/Sleepping/Diamonds_report)
-* [Source Code-Diamonds Report with Visualization](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Data%20Visualization/Diamonds_report_rev00.Rmd)
+* [Diamonds Report with Data Visualization](http://rpubs.com/Sleepping/Diamonds_report)
+* [Source Code - Diamonds Report with Data Visualization](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Data%20Visualization/Diamonds_report_rev00.Rmd)
 
 ## Sprint06 - Statistics
 
