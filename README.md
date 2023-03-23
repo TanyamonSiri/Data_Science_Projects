@@ -19,7 +19,7 @@ In data science bootcamp with 4 months intensive program (15 Dec 2022 - 30 June 
 
 *January, 2023*
 
-Description: A small restaurant database consists of 5 dimensions table and 1 fact table, along with ER-diagram and some queries for data analysis. 
+Description: A small restaurant database consists of 5 dimension tables and 1 fact table, along with ER-diagram and some queries for data analysis. 
 * [My_Restaurant.sql](https://replit.com/@TanyamonSirikan/BootcampHomeworkSQL#main.sql)
 * [ER-diagram](https://dbdiagram.io/d/63d8d697296d97641d7d4acc)
 
@@ -41,8 +41,11 @@ Description: The Rule-based Chatbot was created using R to help users choose Tha
 
 *March, 2023*
 
-Description: A report with 5 visualization from `diamonds` dataset, using `ggplot2` package to explore this dataset and create `R Markdown` document. Note that
+Description: A report with 5 visualization from `diamonds` dataset, using `ggplot2` to explore this dataset and create `R Markdown` document. Note that
 `diamonds` is a built-in dataset in ggplot2 library that containing the prices and other attributes of almost 54,000 round cut diamonds.
+
+* [Diamonds Report with Visualization](http://rpubs.com/Sleepping/Diamonds_report)
+* [Source Code-Diamonds Report with Visualization](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/blob/main/Data%20Visualization/Diamonds_report_rev00.Rmd)
 
 ## Sprint06 - Statistics
 
