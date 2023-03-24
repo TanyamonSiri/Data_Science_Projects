@@ -24,7 +24,7 @@ A simple restaurant database created with `SQL` consists of 5 dimension tables a
 
 
 ## 3. R Programming
-The Rule-based Chatbot is created to assist users in choosing Thai food and playing an interactive rock-paper-scissors game. This project is created with `R` and published in Replit, with an objective to manage input data using control flow and function to provide pre-defined replies.
+The Rule-based Chatbot is created to assist users in choosing Thai food 🍽️ and playing an interactive rock-paper-scissors game 🕹️. This project is created with `R` and published in Replit, with an objective to manage input data using control flow and function to provide pre-defined replies.
 
 * [Mel Chatbot.r 🐻](https://replit.com/@TanyamonSirikan/Mel-Chatbot)
 * [Source Code](https://github.com/TanyamonSiri/DS_Bootcamp_Projects/tree/main/Mel-Chatbot)
