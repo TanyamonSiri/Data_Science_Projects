@@ -52,3 +52,7 @@ A report with 5 visualization from `diamonds` dataset, using `ggplot2` to explor
 ## 9. Essential Python for Data Science
 
 ## 10. Dashboard 
+
+
+
+### Verified Batch: (In-progress)
