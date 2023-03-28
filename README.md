@@ -1,4 +1,4 @@
-# Data Science Bootcamp Projects
+# Data Science Projects
 #### Data Science Bootcamp 7 with `AdToy DataRockie`
 
 <img src="https://user-images.githubusercontent.com/125655019/219699167-b8e325a5-3283-4d29-b4c8-51dd6ed0c1d3.png" width="600" height="600">
