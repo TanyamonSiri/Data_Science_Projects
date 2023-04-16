@@ -50,6 +50,9 @@ A report with 5 visualization from `diamonds` dataset, using `ggplot2` to explor
 ## 8. Intro to Python Programming
 
 ## 9. Essential Python for Data Science
+Use `request` to get data from [the Cocktail Database](https://www.thecocktaildb.com/api)🍹 which is a public API and export to .csv file. Along with use `sklearn` algorithms to build 3 machine learning models which are LinearRegression, RandomForest and DecisionTree.
+
+* [Homework of Essential Python Class](https://colab.research.google.com/drive/1LFhsaODaRwJFgIv0N0-iIiuIn2VrRtJL#scrollTo=Ax6PhLRuwibM)
 
 ## 10. Dashboard 
 
