@@ -48,6 +48,10 @@ A report with 5 visualization from `diamonds` dataset, using `ggplot2` to explor
 ## 7. Machine Learning for Data Analyst
 
 ## 8. Intro to Python Programming
+Use `Python` to create a interactive chatbot for pizza ordering and play rock-paper-scissors, as well as `OOP` (Object Oriented Programming) knowledge to create an ATM class with five methods: deposit, transfer, withdrawn, update password, and summary bank account. Moreover, the final project in exploring and analyzing sales data with `Pandas` is also included below.
+
+* [Homework Python 101 with OOP](https://github.com/TanyamonSiri/Data_Science_Projects/blob/main/Python%20for%20Data%20Analyst/HW_Python.ipynb)
+* [Sales Data Analysis with Pandas](https://github.com/TanyamonSiri/Data_Science_Projects/blob/main/Python%20for%20Data%20Analyst/Course%20Pandas%20Foundation%20-%20Final%20Project%20.ipynb)
 
 ## 9. Essential Python for Data Science
 Use `request` to get data from [the Cocktail Database](https://www.thecocktaildb.com/api)🍹 which is a public API and export to .csv file. Along with use `sklearn` algorithms to build 3 machine learning models which are LinearRegression, RandomForest and DecisionTree.
