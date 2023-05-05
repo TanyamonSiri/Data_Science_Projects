@@ -54,7 +54,12 @@ Use `request` to get data from [the Cocktail Database](https://www.thecocktaildb
 
 * [Homework of Essential Python Class](https://colab.research.google.com/drive/1LFhsaODaRwJFgIv0N0-iIiuIn2VrRtJL#scrollTo=Ax6PhLRuwibM)
 
-## 10. Dashboard 
+## 10. Dashboard
+Use `SQL` to query essential information from [Summer Products & Sales Performance](https://data.world/jfreex/summer-products-and-sales-performance-in-e-commerce-on-wish), then use Looker Studio and Tableau Public to generate a report and dashboard.
+
+* [Merchants.sql]
+* [Merchants Performance Dashboard](https://public.tableau.com/app/profile/tanyamon.sirikanjanakul/viz/MerchantsPerformanceDashboard/Dashboard1) - `Tableau Public`
+* [Merchants Report on Wish Platform](https://lookerstudio.google.com/reporting/0d9c4a9a-6337-4dc3-8da2-f924996e3194) - `Looker Studio`
 
 
 
