@@ -68,4 +68,7 @@ Use `SQL` to query essential information from [Summer Products & Sales Performan
 
 
 
-### Verified Batch: (In-progress)
+### Verified Batch: 
+![image](https://github.com/TanyamonSiri/Data_Science_Projects/assets/125655019/000be5b4-3ff6-433a-abbb-fd2c4a4ea24b)
+
+
