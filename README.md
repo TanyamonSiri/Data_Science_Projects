@@ -3,7 +3,7 @@
 
 <img src="https://user-images.githubusercontent.com/125655019/219699167-b8e325a5-3283-4d29-b4c8-51dd6ed0c1d3.png" width="600" height="600">
 
-In data science bootcamp with 6 months intensive program, we've learnt 10 sprints (on-going) which are in-demand skills to be an Entry-level Data Analyst. Therefore, all my consistent homework and projects are as follows:
+In data science bootcamp with 6 months intensive program, we've learnt 10 sprints which are in-demand skills to be an Entry-level Data Analyst. Therefore, all my consistent homework and projects are as follows:
 
 ## 1. Spreadsheet
 
